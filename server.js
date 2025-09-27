@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGODB_URL)
 
     // listen for incoming request (start the server)
     app.listen(process.env.PORT,'localhost',()=>{
-    console.log(`server is listening on http://localhost:3007`)
+    console.log(`server is listening on http://localhost:${process.env.PORT}`)
 })
 })
 .catch(err=>{
