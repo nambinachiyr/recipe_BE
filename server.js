@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGODB_URL)
     console.log('successfully connected')
 
     // listen for incoming request (start the server)
-    app.listen(process.env.PORT,'localhost',()=>{
+    app.listen(process.env.PORT,'0.0.0.0',()=>{
     console.log(`server is listening on http://localhost:${process.env.PORT}`)
 })
 })
